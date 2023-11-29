@@ -1,0 +1,70 @@
+#province-container{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#province-title{
+    font-family: 'Mochiy Pop One';
+    font-size: 43px;
+    color: rgba(24, 25, 51, 1);
+    text-align: center;
+}
+
+#first-word{
+    color: rgba(0, 81, 160, 1);
+}
+
+.select-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    color: rgba(102, 102, 102, 1);
+    font-size: small;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem 2rem 0 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    border: 3px solid rgba(10, 115, 219, 0.29); 
+}
+#field{
+    display: flex;
+    align-items: center;
+}
+.province-btn{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background: linear-gradient(to right, #0074cc, #005699);
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+
+}
+
+@media (max-width: 834px) {
+    #province-container{
+        top: 75%
+    }
+    #province-title{
+        font-size: 20px;
+    }
+    .select-container{
+        font-size: 10px;
+        margin: 1.5rem 0 0 0;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+}
+
+@media (max-width: 536px) {
+    /* #province-container{
+        top: 75%
+    } */
+    #province-title{
+        font-size: 15px;
+    }
+    .province-btn{
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+}
