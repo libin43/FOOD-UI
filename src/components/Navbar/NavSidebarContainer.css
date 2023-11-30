@@ -1,11 +1,11 @@
-#nav-container{
+#nav-container {
     margin: 4rem 4rem 4rem 4rem;
     background-color: #ffff;
     box-shadow: 10px 7px 72px rgba(0, 81, 160, 0.11);
     display: flex;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     justify-content: end;
@@ -14,27 +14,27 @@ ul{
 
 }
 
-#left-container{
+#left-container {
     display: flex;
     align-items: center;
 
 }
 
-#right-container{
+#right-container {
     display: flex;
     align-items: center;
     width: 100%;
 
 }
 
-.nav-logo{
-    min-width: 1rem;
+.nav-logo {
+    /* min-width: 1rem; */
     max-width: 10rem;
-    min-height: 1rem;
+    /* min-height: 1rem; */
     max-height: 10rem;
 }
 
-.nav-item{
+.nav-item {
     padding: 0rem 1rem 0rem 1rem;
     display: flex;
     align-items: center;
@@ -43,24 +43,51 @@ ul{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* .shop-item{
+.shop-box {
     padding: 1rem 2rem 1rem 2rem;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgba(0, 81, 160, 1);
-    color: #ffff;
-    border-radius: 10px;
-    display: flex;
-} */
-
-.shop-box{
-    padding: 1rem 2rem 1rem 2rem;
-    background:  linear-gradient(to right, #0074cc, #005699);
+    background: linear-gradient(to right, #0074cc, #005699);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 255, 0.2);
     color: #ffff;
     display: flex;
     align-items: center;
-
 }
 
+/* Media query for smaller screens (tablet and below) */
+
+@media (max-width: 834px) {
+    #nav-container {
+        margin: 1rem 1rem 1rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 10px; */
+    }
+
+    .nav-item {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    .shop-box {
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 536px) {
+    #nav-container {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    #nav-container {
+        font-size: 8px;
+    }
+
+    .nav-logo {
+        width: 120px;
+    }
+}
