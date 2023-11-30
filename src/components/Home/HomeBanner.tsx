@@ -12,6 +12,9 @@ export const HomeBanner = () => {
             <div className='check'>Wake Up Your <img className="emo-smile" src={emojiHome} alt="smiley" /></div>
             <div>Taste Buds With Us</div>
         </div>
+        <div id="img-banner-container">
+          
+        </div>
     </div>
   )
 }
