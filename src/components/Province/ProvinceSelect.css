@@ -1,6 +1,6 @@
 #province-container{
     position: absolute;
-    top: 100%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -45,7 +45,7 @@
 
 @media (max-width: 834px) {
     #province-container{
-        top: 75%
+        top: 30%
     }
     #province-title{
         font-size: 20px;
@@ -58,9 +58,9 @@
 }
 
 @media (max-width: 536px) {
-    /* #province-container{
-        top: 75%
-    } */
+    #province-container{
+        top: 25%
+    }
     #province-title{
         font-size: 15px;
     }
